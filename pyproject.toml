@@ -1,0 +1,22 @@
+[project]
+name = "mcp-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "JustAkrab", email = "reda.akrab13@gmail.com" }
+]
+requires-python = ">=3.15"
+dependencies = [
+    "fastmcp>=4.2.5",
+    "groq>=1.7.0",
+    "pathlib>=1.0.1",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+mcp-project = "mcp_project:main"
+
+[build-system]
+requires = ["uv_build>=0.13.5,<0.14.0"]
+build-backend = "uv_build"
